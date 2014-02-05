@@ -42,8 +42,53 @@ function Update ()
 	}
 	else if(Input.GetKey(KeyCode.Space))
 	{
-		rigidbody.velocity = rigidbody.velocity * braking * Time.deltaTime;
+		if(Mathf.Abs(rigidbody.velocity.x) > braking  * Time.deltaTime)
+		{
+			if(rigidbody.velocity.x > 0)
+			{
+				rigidbody.velocity.x -= braking * Time.deltaTime;
+			}
+			else
+			{
+				rigidbody.velocity.x += braking * Time.deltaTime;
+			}
+		}
+		else
+		{
+			rigidbody.velocity.x = 0;
+		}
 		
+		if(Mathf.Abs(rigidbody.velocity.y) > braking  * Time.deltaTime)
+		{
+			if(rigidbody.velocity.y > 0)
+			{
+				rigidbody.velocity.y -= braking * Time.deltaTime;
+			}
+			else
+			{
+				rigidbody.velocity.y += braking * Time.deltaTime;
+			}
+		}
+		else
+		{
+			rigidbody.velocity.y = 0;
+		}
+		
+		if(Mathf.Abs(rigidbody.velocity.z) > braking * Time.deltaTime)
+		{
+			if(rigidbody.velocity.z > 0)
+			{
+				rigidbody.velocity.z -= braking * Time.deltaTime;
+			}
+			else
+			{
+				rigidbody.velocity.z += braking * Time.deltaTime;
+			}
+		}
+		else
+		{
+			rigidbody.velocity.z = 0;
+		}
 	}
 	
 	if(Input.GetKey(KeyCode.UpArrow))
