@@ -4,7 +4,8 @@ This should be attached to the ship controller, which should not turn
 */
 var thrust: float;
 var braking: float; //brake accelaration
-var rotateX: float;
+var rotate: float; //turn speed
+var roll: float; //roll speed
 var cam: GameObject;
 private var speed: float;
 private var force: float;
@@ -93,19 +94,32 @@ function Update ()
 	
 	if(Input.GetKey(KeyCode.UpArrow))
 	{
-		cam.transform.localEulerAngles.x -= rotateX * Time.deltaTime;
+		cam.transform.Rotate(Vector3(-rotate * Time.deltaTime, 0, 0));
+		//cam.transform.localEulerAngles.x -= rotate * Time.deltaTime;
 	}
 	else if(Input.GetKey(KeyCode.DownArrow))
 	{
-		cam.transform.localEulerAngles.x += rotateX * Time.deltaTime;
+		cam.transform.Rotate(Vector3(rotate * Time.deltaTime, 0, 0));
+		//cam.transform.localEulerAngles.x += rotate * Time.deltaTime;
 	}
 	
 	if(Input.GetKey(KeyCode.LeftArrow))
 	{
-		cam.transform.localEulerAngles.y -= rotateX * Time.deltaTime;
+		cam.transform.Rotate(Vector3(0, -rotate * Time.deltaTime, 0));
+		//cam.transform.localEulerAngles.y -= rotate * Time.deltaTime;
 	}
 	else if(Input.GetKey(KeyCode.RightArrow))
 	{
-		cam.transform.localEulerAngles.y += rotateX * Time.deltaTime;
+		cam.transform.Rotate(Vector3(0, rotate * Time.deltaTime, 0));
+		//cam.transform.localEulerAngles.y += rotate * Time.deltaTime;
+	}
+	
+	if(Input.GetKey(KeyCode.Q))
+	{
+		cam.transform.Rotate(Vector3(0, 0, roll * Time.deltaTime));
+	}
+	else if(Input.GetKey(KeyCode.E))
+	{
+		cam.transform.Rotate(Vector3(0, 0, -roll * Time.deltaTime));
 	}
 }
