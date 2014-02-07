@@ -1,11 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\objectLabel.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\asteroidSpawner.js">
     <Files>
-      <File FileName="Assets\Scripts\asteroidSpawner.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\asteroidSpawner.js" Line="75" Column="38" />
+      <File FileName="Assets\Scripts\objectLabel.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\asteroidSpawner.js" Line="25" Column="5" />
       <File FileName="Assets\Scripts\rotateScript.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\shipController.js" Line="22" Column="42" />
-      <File FileName="Assets\Scripts\objectLabel.js" Line="28" Column="29" />
+      <File FileName="Assets\Scripts\shipController.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

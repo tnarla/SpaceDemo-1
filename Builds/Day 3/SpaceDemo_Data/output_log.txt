@@ -15,7 +15,7 @@ Platform assembly: C:\Users\vkoves\Documents\SpaceDemo\Builds\Day 3\SpaceDemo_Da
 Loading C:\Users\vkoves\Documents\SpaceDemo\Builds\Day 3\SpaceDemo_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\vkoves\Documents\SpaceDemo\Builds\Day 3\SpaceDemo_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\vkoves\Documents\SpaceDemo\Builds\Day 3\SpaceDemo_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.106 seconds
+- Completed reload, in  0.318 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
