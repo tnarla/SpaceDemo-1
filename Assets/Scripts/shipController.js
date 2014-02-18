@@ -92,6 +92,12 @@ function Update ()
 		}
 	}
 	
+	if(Input.GetKeyDown(KeyCode.F))
+	{
+		//warp drive
+		
+	}
+	
 	if(Input.GetKey(KeyCode.UpArrow))
 	{
 		cam.transform.Rotate(Vector3(-rotate * Time.deltaTime, 0, 0));
